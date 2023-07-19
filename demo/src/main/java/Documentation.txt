@@ -1,0 +1,83 @@
+what is spring boot?
+--> Spring Boot is an open-source Java framework that simplifies the process of creating stand-alone, production-grade
+Spring-based applications. It provides a convention-over-configuration approach, allowing developers to quickly set up
+and configure Spring applications with minimal effort. Spring Boot eliminates the need for manual configuration and
+boilerplate code, enabling developers to focus more on writing business logic. It also includes built-in support for
+various technologies and frameworks, such as embedded servers, database access, security, and more.
+
+Why we need spring boot?
+--> We need Spring Boot for several reasons:
+     1. Simplified Configuration: Spring Boot provides a convention-over-configuration approach, reducing the need for
+     annual configuration. It includes sensible defaults and autoconfiguration, allowing developers to quickly
+     bootstrap and configure Spring applications with minimal effort.
+     2. Rapid Application Development: Spring Boot simplifies and accelerates the development process by providing a wide
+     range of pre-built components and starter dependencies. These components help in building applications faster and with less code.
+     3. Microservices Architecture: Spring Boot is well-suited for developing microservices-based applications. It provides
+      features like embedded servers, service discovery, and easy integration with cloud platforms, making it easier to build and deploy microservices.
+     4. Production-Ready Applications: Spring Boot promotes best practices and provides built-in support for various production-grade
+      features like health checks, metrics, monitoring, security, and more. This helps in building robust and scalable applications
+      that are ready for deployment in a production environment.
+     5. Community and Ecosystem: Spring Boot is backed by a large and active community, which means there is extensive documentation,
+      tutorials, and community support available. It also integrates seamlessly with other Spring projects, enabling developers
+       to leverage the entire Spring ecosystem.
+     Overall, Spring Boot simplifies the development process, increases productivity, and provides a solid foundation for building modern,
+      scalable, and maintainable applications.
+
+
+ What is Spring IOC?
+ --> Spring IOC stands for Inversion of Control. It is a core feature of the Spring Framework that helps in achieving loose
+      coupling and dependency injection in Java applications. IOC is a design principle where the control of object creation
+      and lifecycle management is inverted or delegated to a container or framework.
+      In the context of Spring, IOC is implemented through the Spring container, also known as the Application Context.
+      The container is responsible for creating and managing objects (beans) and their dependencies.
+      Instead of manually creating and managing object instances, the Spring container takes charge of creating objects
+      based on configuration metadata (XML, annotations, or Java code) and wiring them together. This allows for more
+       modular and flexible application design, as objects can be easily replaced or reconfigured without changing the
+       application code.Dependency injection is a key aspect of IOC, where the dependencies of an object are injected
+       (provided) by the container. This helps in achieving loose coupling between objects, as the dependencies are not
+       hardcoded within the object but are rather provided externally.Overall, Spring IOC provides a way to achieve
+       decoupling, modularity, and easier testing in Java applications by shifting the responsibility of object creation
+        and dependency management to the Spring container.
+
+  What is Dependency Injection?
+  --> Dependency Injection (DI) is a design pattern and a core principle in software development that promotes loose
+  coupling between components or classes. It is a technique where the dependencies of a class are provided externally
+   rather than being created or managed within the class itself.
+       In DI, the dependencies required by a class are "injected" into it, typically through constructor parameters,
+       method parameters, or setters. The responsibility of creating and managing these dependencies is delegated to an
+       external entity, often referred to as an "injector" or a "container."
+
+       The main benefits of dependency injection are:
+       1. Loose Coupling: By injecting dependencies, classes are not tightly coupled to specific implementations.
+       This allows for easier maintenance, testing, and flexibility in swapping out different implementations.
+
+       2. Testability: With DI, it becomes easier to write unit tests for classes by providing mock or stub
+       implementations of dependencies. This allows for isolated testing of individual components.
+
+       3. Reusability: Classes that rely on injected dependencies can be reused in different contexts or scenarios by
+       simply providing different implementations of the dependencies.
+
+       4. Separation of Concerns: DI helps in separating the responsibility of creating objects from the business logic
+       of the classes. This improves the overall modularity and maintainability of the codebase.
+       Overall, dependency injection is a powerful technique that promotes decoupling, modularity, and testability in
+       software development, making code more maintainable and flexible.
+
+
+   What are the tiers in spring boot?
+   --> In Spring Boot, the concept of "tiers" is not explicitly defined. However, Spring Boot applications typically follow
+   a layered architecture, which can be considered as tiers or levels of abstraction. These layers are:
+        1. Presentation Layer: This layer handles the interaction with the user or external systems. It includes components
+         like REST controllers, web controllers, views, and templates.
+
+        2. Service Layer: The service layer contains the business logic and acts as an intermediary between the presentation
+         layer and the data access layer. It encapsulates the application's business rules and processes.
+
+        3. Data Access Layer: This layer is responsible for interacting with the database or external data sources.
+        It includes components like repositories, DAOs (Data Access Objects), and database connectors.
+
+        4. Infrastructure Layer: The infrastructure layer provides support and utilities for the application.
+        It includes components like configuration classes, security, logging, caching, and external integrations.
+
+        These layers help in organizing the application code and separating concerns, allowing for better maintainability
+        and scalability. However, it's important to note that the specific architecture and layering can vary based on the
+        requirements and design choices of the application.
